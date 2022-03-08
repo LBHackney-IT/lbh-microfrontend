@@ -24,12 +24,12 @@ Usage
     - upgrade
 
 	Examples
-	  $ mtfh-cli new mtfh-frontend-project
-      - Starts the scaffolding in a new folder in cwd called mtfh-frontend-project
+	  $ mtfh-cli new lbh-microfrontend-project
+      - Starts the scaffolding in a new folder in cwd called lbh-microfrontend-project
     $ mtfh-cli run
       - Starts only the required apps
     $ mtfh-cli run search tenure
-      - Starts the required apps, plus mtfh-frontend-search and mtfh-frontend-tenure
+      - Starts the required apps, plus lbh-microfrontend-search and lbh-microfrontend-tenure
     $ mtfh-cli run mtfh
       - Starts the required apps, plus all apps prefixed with mtfh (most if not all)
 ```
@@ -47,7 +47,7 @@ NB: Most MTFH frontend repos are currently using `yarn` so it would be important
 ### Install
 
 Install existing micro-frontends into a given directory. All microfrontends are prefixed
-with `mtfh-frontend-`.
+with `lbh-microfrontend-`.
 
 - Follow the prompts by adding and securing your github personal access token.
 - Select the micro-frontends you want to add, using the arrow keys and space to select.

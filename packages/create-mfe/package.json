@@ -3,7 +3,7 @@
   "version": "1.1.6",
   "description": "Scaffold Micro-frontend apps with Hackney Council standards",
   "author": "Gareth Cozens <gareth.cozens@hackney.gov.uk>",
-  "homepage": "https://github.com/LBHackney-IT/mtfh-frontend#readme",
+  "homepage": "https://github.com/LBHackney-IT/lbh-microfrontend#readme",
   "license": "MIT",
   "bin": {
     "create-mfe": "bin/index.js"
@@ -16,10 +16,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LBHackney-IT/mtfh-frontend.git"
+    "url": "git+https://github.com/LBHackney-IT/lbh-microfrontend.git"
   },
   "bugs": {
-    "url": "https://github.com/LBHackney-IT/mtfh-frontend/issues"
+    "url": "https://github.com/LBHackney-IT/lbh-microfrontend/issues"
   },
   "dependencies": {
     "@hackney/generator-mfe": "^1.0.1",

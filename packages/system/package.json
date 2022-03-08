@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "Design system configuration for LBH Modern Tools for Housing",
   "author": "Gareth Cozens <gareth.cozens@amido.com>",
-  "homepage": "https://github.com/LBHackney-IT/mtfh-frontend",
+  "homepage": "https://github.com/LBHackney-IT/lbh-microfrontend",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -16,13 +16,13 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LBHackney-IT/mtfh-frontend.git",
+    "url": "git+https://github.com/LBHackney-IT/lbh-microfrontend.git",
     "directory": "packages/system"
   },
   "scripts": {
     "build": "rollup -c"
   },
   "bugs": {
-    "url": "https://github.com/LBHackney-IT/mtfh-frontend/issues"
+    "url": "https://github.com/LBHackney-IT/lbh-microfrontend/issues"
   }
 }

@@ -62,9 +62,9 @@ export default class ApplicationGenerator extends Generator<ApplicationGenerator
       this.options.folder = dir[1];
     }
 
-    if (this.options.folder && this.options.folder.indexOf("mtfh-frontend-") !== 0) {
+    if (this.options.folder && this.options.folder.indexOf("lbh-microfrontend-") !== 0) {
       this.log(
-        chalk.red("The destination folder should be prefixed with `mtfh-frontend-*`."),
+        chalk.red("The destination folder should be prefixed with `lbh-microfrontend-*`."),
       );
       process.exit();
     }

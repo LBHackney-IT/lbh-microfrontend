@@ -25,15 +25,15 @@ const cli = meow(
     - upgrade
 
 	Examples
-	  $ mtfh-cli new mtfh-frontend-project
+	  $ mtfh-cli new lbh-microfrontend-project
    ${chalk.gray(
-     "- Starts the scaffolding in a new folder in cwd called mtfh-frontend-project",
+     "- Starts the scaffolding in a new folder in cwd called lbh-microfrontend-project",
    )}
    $ mtfh-cli run
    ${chalk.gray("- Starts only the required apps")}
    $ mtfh-cli run search tenure
    ${chalk.gray(
-     "- Starts the required apps, plus mtfh-frontend-search and mtfh-frontend-tenure",
+     "- Starts the required apps, plus lbh-microfrontend-search and lbh-microfrontend-tenure",
    )}
    $ mtfh-cli run mtfh
    ${chalk.gray(

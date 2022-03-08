@@ -7,10 +7,10 @@ import { $apps } from "../store";
 import type { AppConfig, Repo } from "../types";
 
 const requiredApps = [
-  "mtfh-frontend-root",
-  "mtfh-frontend-authentication",
-  "mtfh-frontend-header",
-  "mtfh-frontend-common",
+  "lbh-microfrontend-root",
+  "lbh-microfrontend-authentication",
+  "lbh-microfrontend-header",
+  "lbh-microfrontend-common",
 ];
 
 const add = (repos: Repo[], cwd: string) => {

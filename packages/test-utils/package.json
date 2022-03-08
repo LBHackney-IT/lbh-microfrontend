@@ -3,7 +3,7 @@
   "version": "1.8.9",
   "description": "Test utilities for LBH Modern Tools for Housing",
   "author": "Gareth Cozens <gareth.cozens@amido.com>",
-  "homepage": "https://github.com/LBHackney-IT/mtfh-frontend",
+  "homepage": "https://github.com/LBHackney-IT/lbh-microfrontend",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LBHackney-IT/mtfh-frontend.git",
+    "url": "git+https://github.com/LBHackney-IT/lbh-microfrontend.git",
     "directory": "packages/test-utils"
   },
   "scripts": {
@@ -23,7 +23,7 @@
     "lint": "eslint src --ext js,jsx,ts,tsx"
   },
   "bugs": {
-    "url": "https://github.com/LBHackney-IT/mtfh-frontend/issues"
+    "url": "https://github.com/LBHackney-IT/lbh-microfrontend/issues"
   },
   "dependencies": {
     "@hackney/mtfh-system": "^1.0.2",
@@ -33,7 +33,7 @@
     "jest-matchmedia-mock": "^1.1.0"
   },
   "devDependencies": {
-    "@mtfh/common": "https://github.com/LBHackney-IT/mtfh-frontend-common.git",
+    "@mtfh/common": "https://github.com/LBHackney-IT/lbh-microfrontend-common.git",
     "@testing-library/jest-dom": "5.14.1",
     "@testing-library/react": "12.1.0",
     "@types/faker": "^5.5.8",

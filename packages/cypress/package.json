@@ -3,7 +3,7 @@
   "version": "1.2.1",
   "description": "Cypress helpers fpr LBH Modern Tools for Housing",
   "author": "Gareth Cozens <gareth.cozens@amido.com>",
-  "homepage": "https://github.com/LBHackney-IT/mtfh-frontend#readme",
+  "homepage": "https://github.com/LBHackney-IT/lbh-microfrontend#readme",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LBHackney-IT/mtfh-frontend.git"
+    "url": "git+https://github.com/LBHackney-IT/lbh-microfrontend.git"
   },
   "scripts": {
     "build": "rollup -c",
@@ -25,7 +25,7 @@
     "lint": "eslint src --ext js,jsx,ts,tsx"
   },
   "bugs": {
-    "url": "https://github.com/LBHackney-IT/mtfh-frontend/issues"
+    "url": "https://github.com/LBHackney-IT/lbh-microfrontend/issues"
   },
   "devDependencies": {
     "cypress": "^8.5.0",

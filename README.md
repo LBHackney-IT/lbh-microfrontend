@@ -1,4 +1,4 @@
-# `mtfh-frontend`
+# `lbh-microfrontend`
 
 This monorepo contains various reusable packages, originally built to facilitate repition
 within MTFH's micro-frontend architecture.

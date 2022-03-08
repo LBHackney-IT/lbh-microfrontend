@@ -21,7 +21,7 @@ import { render } from "@hackney/mtfh-test-utils";
 ### React Router Dom
 
 The `render` method wraps tests in our custom `ConfirmationRouter`
-([see here](https://github.com/LBHackney-IT/mtfh-frontend-common/blob/main/lib/components/confirmation-router/confirmation-router.tsx))
+([see here](https://github.com/LBHackney-IT/lbh-microfrontend-common/blob/main/lib/components/confirmation-router/confirmation-router.tsx))
 
 ```tsx
 render(<PageView />);
@@ -47,7 +47,7 @@ render(<Button />, { query: "sm" });
 ```
 
 The accepted
-[queries](https://github.com/LBHackney-IT/mtfh-frontend/blob/main/packages/system/src/breakpoints.ts)
+[queries](https://github.com/LBHackney-IT/lbh-microfrontend/blob/main/packages/system/src/breakpoints.ts)
 are defined as the following:
 
 ```tsx

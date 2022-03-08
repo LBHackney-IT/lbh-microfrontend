@@ -55,9 +55,9 @@ export const useGithub = (token?: string | false) => {
         page,
       });
 
-      // Only looking for mtfh-frontend- prefixed repos
+      // Only looking for lbh-microfrontend- prefixed repos
       const mtfhRepos = res.data.filter(
-        ({ name }) => name.toLowerCase().indexOf("mtfh-frontend-") === 0,
+        ({ name }) => name.toLowerCase().indexOf("lbh-microfrontend-") === 0,
       );
 
       // Check if we should continue paging results

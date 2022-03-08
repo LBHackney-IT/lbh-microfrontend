@@ -28,7 +28,7 @@ const RegisterCommand = ({ dir }: RegisterCommandProps) => {
       const directories = fs
         .readdirSync(fullPath, { withFileTypes: true })
         .filter((value) => fs.lstatSync(path.join(fullPath, value.name)).isDirectory())
-        .filter((value) => value.name.indexOf("mtfh-frontend-") === 0)
+        .filter((value) => value.name.indexOf("lbh-microfrontend-") === 0)
         .map((value) => value.name);
 
       setFolders(directories);

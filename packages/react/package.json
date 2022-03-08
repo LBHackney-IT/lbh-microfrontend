@@ -3,7 +3,7 @@
   "version": "1.1.2",
   "description": "LBH React Design System for LBH Modern Tools for Housing",
   "author": "https://hackney.gov.uk/",
-  "homepage": "https://github.com/LBHackney-IT/mtfh-frontend",
+  "homepage": "https://github.com/LBHackney-IT/lbh-microfrontend",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -26,7 +26,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LBHackney-IT/mtfh-frontend.git",
+    "url": "git+https://github.com/LBHackney-IT/lbh-microfrontend.git",
     "directory": "packages/react"
   },
   "scripts": {
@@ -38,7 +38,7 @@
     "build:types": "tsc --noEmit false --emitDeclarationOnly --declaration --declarationDir dist/types --excludeFiles **/*.test.ts?x,**/*.stories.tsx,jest.setup.ts"
   },
   "bugs": {
-    "url": "https://github.com/LBHackney-IT/mtfh-frontend/issues"
+    "url": "https://github.com/LBHackney-IT/lbh-microfrontend/issues"
   },
   "devDependencies": {
     "@hackney/eslint-config": "^1.1.1",

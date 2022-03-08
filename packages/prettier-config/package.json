@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Prettier config for LBH Modern Tools for Housing",
   "author": "Gareth Cozens <gareth.cozens@amido.com>",
-  "homepage": "https://github.com/LBHackney-IT/mtfh-frontend",
+  "homepage": "https://github.com/LBHackney-IT/lbh-microfrontend",
   "license": "MIT",
   "main": "index.js",
   "publishConfig": {
@@ -11,10 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LBHackney-IT/mtfh-frontend.git",
+    "url": "git+https://github.com/LBHackney-IT/lbh-microfrontend.git",
     "directory": "packages/prettier-config"
   },
   "bugs": {
-    "url": "https://github.com/LBHackney-IT/mtfh-frontend/issues"
+    "url": "https://github.com/LBHackney-IT/lbh-microfrontend/issues"
   }
 }
