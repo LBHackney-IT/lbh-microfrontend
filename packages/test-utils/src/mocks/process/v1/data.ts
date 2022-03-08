@@ -1,6 +1,6 @@
 import faker from "faker/locale/en";
 
-import { Process, ProcessState } from "@mtfh/common/lib/api/process/v1";
+import { Process, ProcessState } from "@mfe/common/lib/api/process/v1";
 
 faker.seed(1);
 

@@ -3,7 +3,7 @@
 exports[`accepts and ignores a null child 1`] = `
 <div>
   <div
-    class="mtfh-sidebar"
+    class="mfe-sidebar"
   >
     <div
       class="govukAccordion lbhAccordion"
@@ -102,13 +102,13 @@ exports[`accepts and ignores a null child 1`] = `
 exports[`it renders correctly on desktop 1`] = `
 <div>
   <div
-    class="mtfh-sidebar"
+    class="mfe-sidebar"
   >
     <div
       id="sidebar"
     >
       <div
-        class="mtfh-sidebar-section"
+        class="mfe-sidebar-section"
         id="section-1"
         title="More Details"
       >
@@ -124,7 +124,7 @@ exports[`it renders correctly on desktop 1`] = `
 exports[`it renders correctly on mobile 1`] = `
 <div>
   <div
-    class="mtfh-sidebar"
+    class="mfe-sidebar"
   >
     <div
       class="govukAccordion lbhAccordion"

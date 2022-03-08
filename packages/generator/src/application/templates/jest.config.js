@@ -4,12 +4,12 @@ module.exports = {
   transform: {
     "^.+\\.(j|t)sx?$": "babel-jest",
   },
-  //   transformIgnorePatterns: ["/node_modules/(?!lbh-frontend|@mtfh)"],
+  //   transformIgnorePatterns: ["/node_modules/(?!lbh-frontend|@mfe)"],
   moduleNameMapper: {
     "\\.(css|scss)$": "identity-obj-proxy",
   },
   moduleDirectories: ["node_modules"],
-  setupFilesAfterEnv: ["@testing-library/jest-dom", "@hackney/mtfh-test-utils"],
+  setupFilesAfterEnv: ["@testing-library/jest-dom", "@hackney/mfe-test-utils"],
   coverageDirectory: "../coverage",
   coverageThreshold: {
     global: {

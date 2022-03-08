@@ -3,7 +3,7 @@
 exports[`it renders correctly 1`] = `
 <div>
   <div
-    class="mtfh-layout"
+    class="mfe-layout"
   >
     <div
       id="top"
@@ -11,10 +11,10 @@ exports[`it renders correctly 1`] = `
       Top
     </div>
     <div
-      class="mtfh-layout__container"
+      class="mfe-layout__container"
     >
       <div
-        class="mtfh-layout__aside"
+        class="mfe-layout__aside"
       >
         <div
           id="side"
@@ -23,7 +23,7 @@ exports[`it renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="mtfh-layout__main"
+        class="mfe-layout__main"
       >
         <div
           id="main"
@@ -39,13 +39,13 @@ exports[`it renders correctly 1`] = `
 exports[`it renders correctly without a side 1`] = `
 <div>
   <div
-    class="mtfh-layout mtfh-layout--narrow"
+    class="mfe-layout mfe-layout--narrow"
   >
     <div
-      class="mtfh-layout__container"
+      class="mfe-layout__container"
     >
       <div
-        class="mtfh-layout__main"
+        class="mfe-layout__main"
       >
         <div
           id="main"

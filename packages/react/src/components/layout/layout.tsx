@@ -16,13 +16,13 @@ export const Layout = forwardRef<HTMLDivElement, LayoutProps>(function Layout(
   return (
     <div
       ref={ref}
-      className={cn("mtfh-layout", { "mtfh-layout--narrow": !side }, className)}
+      className={cn("mfe-layout", { "mfe-layout--narrow": !side }, className)}
       {...props}
     >
       {top}
-      <div className="mtfh-layout__container">
-        {side ? <div className="mtfh-layout__aside">{side}</div> : null}
-        <div className="mtfh-layout__main">{children}</div>
+      <div className="mfe-layout__container">
+        {side ? <div className="mfe-layout__aside">{side}</div> : null}
+        <div className="mfe-layout__main">{children}</div>
       </div>
     </div>
   );

@@ -1,12 +1,12 @@
-# @hackney/mtfh-react
+# @hackney/mfe-react
 
 ## 1.1.2
 
 ### Patch Changes
 
-- 74fb3c0: Bump dependency of @hackney/mtfh-system
+- 74fb3c0: Bump dependency of @hackney/mfe-system
 - Updated dependencies [74fb3c0]
-  - @hackney/mtfh-test-utils@1.1.2
+  - @hackney/mfe-test-utils@1.1.2
 
 ## 1.1.1
 
@@ -23,13 +23,13 @@
 ### Patch Changes
 
 - Updated dependencies [81442c9]
-  - @hackney/mtfh-test-utils@1.0.2
+  - @hackney/mfe-test-utils@1.0.2
 
 ## 1.0.1
 
 ### Patch Changes
 
-- 94c28e7: Initial release of MTFH packages
+- 94c28e7: Initial release of mfe packages
 - Updated dependencies [94c28e7]
-  - @hackney/mtfh-system@1.0.1
-  - @hackney/mtfh-test-utils@1.0.1
+  - @hackney/mfe-system@1.0.1
+  - @hackney/mfe-test-utils@1.0.1

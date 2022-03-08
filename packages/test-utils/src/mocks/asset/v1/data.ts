@@ -1,7 +1,7 @@
 import { addYears, parseISO } from "date-fns";
 import faker from "faker/locale/en";
 
-import { Asset, AssetTenure } from "@mtfh/common/lib/api/asset/v1";
+import { Asset, AssetTenure } from "@mfe/common/lib/api/asset/v1";
 
 import { TENURE_TYPES } from "../../../constants";
 

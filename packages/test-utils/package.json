@@ -1,5 +1,5 @@
 {
-  "name": "@hackney/mtfh-test-utils",
+  "name": "@hackney/mfe-test-utils",
   "version": "1.8.9",
   "description": "Test utilities for LBH Modern Tools for Housing",
   "author": "Gareth Cozens <gareth.cozens@amido.com>",
@@ -26,14 +26,14 @@
     "url": "https://github.com/LBHackney-IT/lbh-microfrontend/issues"
   },
   "dependencies": {
-    "@hackney/mtfh-system": "^1.0.2",
+    "@hackney/mfe-system": "^1.0.2",
     "date-fns": "^2.24.0",
     "faker": "^5.5.3",
     "jest-axe": "^5.0.1",
     "jest-matchmedia-mock": "^1.1.0"
   },
   "devDependencies": {
-    "@mtfh/common": "https://github.com/LBHackney-IT/lbh-microfrontend-common.git",
+    "@mfe/common": "https://github.com/LBHackney-IT/lbh-microfrontend-common.git",
     "@testing-library/jest-dom": "5.14.1",
     "@testing-library/react": "12.1.0",
     "@types/faker": "^5.5.8",
@@ -46,7 +46,7 @@
     "swr": "1.0.1"
   },
   "peerDependencies": {
-    "@mtfh/common": "0.0.1",
+    "@mfe/common": "0.0.1",
     "@testing-library/react": "12.1.0",
     "msw": "^0.35.0",
     "react": "^17.0.2",

@@ -56,7 +56,7 @@ export const useGithub = (token?: string | false) => {
       });
 
       // Only looking for lbh-microfrontend- prefixed repos
-      const mtfhRepos = res.data.filter(
+      const mfeRepos = res.data.filter(
         ({ name }) => name.toLowerCase().indexOf("lbh-microfrontend-") === 0,
       );
 
@@ -64,14 +64,14 @@ export const useGithub = (token?: string | false) => {
       const [lastRepo] = res.data.slice(-1);
 
       if (res.data.length === 40 && lastRepo.name[0].toLowerCase() <= "m") {
-        mtfhRepos.push(...(await fetchApps(page + 1)));
+        mfeRepos.push(...(await fetchApps(page + 1)));
       }
-      return mtfhRepos;
+      return mfeRepos;
     };
 
     fetchApps()
-      .then((mtfhRepos) => {
-        setRepos(mtfhRepos);
+      .then((mfeRepos) => {
+        setRepos(mfeRepos);
         setLoading(false);
       })
       .catch(setError);

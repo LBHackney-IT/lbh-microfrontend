@@ -1,7 +1,7 @@
 import { addYears, parseISO } from "date-fns";
 import faker from "faker/locale/en";
 
-import { HouseholdMember, Tenure } from "@mtfh/common/lib/api/tenure/v1";
+import { HouseholdMember, Tenure } from "@mfe/common/lib/api/tenure/v1";
 
 import { TENURE_TYPES } from "../../../constants";
 

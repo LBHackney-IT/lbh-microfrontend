@@ -2,7 +2,7 @@ import fs from "fs";
 import os from "os";
 import path from "path";
 
-const dir = path.join(os.homedir(), ".mtfh");
+const dir = path.join(os.homedir(), ".mfe");
 
 export const getSystemFile = (file: string) => {
   const fullPath = path.join(dir, file);

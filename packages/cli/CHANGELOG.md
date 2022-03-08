@@ -1,4 +1,4 @@
-# @hackney/mtfh-cli
+# @hackney/mfe-cli
 
 ## 2.1.1
 
@@ -23,7 +23,7 @@
 
 ### Major Changes
 
-- a95e9cb: mtfh-cli v2 Release
+- a95e9cb: mfe-cli v2 Release
 
   Commands available:
 
@@ -40,9 +40,9 @@
   For example:
 
   ```bash
-  $ mtfh-cli run
-  $ mtfh-cli run tenure search
-  $ mtfh-cli run mtfh
+  $ mfe-cli run
+  $ mfe-cli run tenure search
+  $ mfe-cli run mfe
   ```
 
   ## new [path]
@@ -53,7 +53,7 @@
   ## register [path]
 
   Look in the designated path for mfe compliant projects to register them. This makes them
-  available for `mtfh-cli run`. Useful for projects predating the cli.
+  available for `mfe-cli run`. Useful for projects predating the cli.
 
 ### Patch Changes
 

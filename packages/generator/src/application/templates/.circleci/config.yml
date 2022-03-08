@@ -221,7 +221,7 @@ jobs:
         steps:
         - run: |
                 export DEPLOYMENT_ENVIRONMENT='<<parameters.stage>>_environment'
-                curl --location --request POST 'https://circleci.com/api/v2/project/gh/LBHackney-IT/mtfh-tl-e2e-tests/pipeline' \
+                curl --location --request POST 'https://circleci.com/api/v2/project/gh/LBHackney-IT/mfe-tl-e2e-tests/pipeline' \
                 --header 'Circle-Token: '"$CIRCLE_TOKEN"'' \
                 --header 'Content-Type: application/json' \
                 --data '{"branch": "master", "parameters": {"run_workflow_ci": false, "external_trigger": true, "upstream_pipeline_name": "<< pipeline.project.git_url >>", '\""$DEPLOYMENT_ENVIRONMENT"\"': true}}'
@@ -232,7 +232,7 @@ jobs:
         steps:
         - run: |
                 echo downstream e2e tests have failed! Please check the e2e pipeline: ;
-                echo -e 'https://circleci.com/api/v2/project/gh/LBHackney-IT/mtfh-tl-e2e-tests/pipeline' ;
+                echo -e 'https://circleci.com/api/v2/project/gh/LBHackney-IT/mfe-tl-e2e-tests/pipeline' ;
                 exit 1
 workflows:
   version: 2
@@ -264,7 +264,7 @@ workflows:
             branches:
               only: main
       - trigger-e2e-pipeline:
-          context: mtfh-mfe-e2e-tests
+          context: mfe-mfe-e2e-tests
           stage: "development"
           requires:
             - build-deploy-development
@@ -307,7 +307,7 @@ workflows:
             branches:
               only: main
       - trigger-e2e-pipeline:
-          context: mtfh-mfe-e2e-tests
+          context: mfe-mfe-e2e-tests
           stage: "staging"
           requires:
             - build-deploy-staging
@@ -350,7 +350,7 @@ workflows:
             branches:
               only: main
       - trigger-e2e-pipeline:
-          context: mtfh-mfe-e2e-tests
+          context: mfe-mfe-e2e-tests
           stage: "production"
           requires:
             - build-deploy-production
@@ -362,4 +362,4 @@ workflows:
     when: << pipeline.parameters.e2e_test_failure >>
     jobs:
       - failure-downstream:
-          context: mtfh-mfe-e2e-tests
+          context: mfe-mfe-e2e-tests

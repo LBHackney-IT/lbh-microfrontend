@@ -6,7 +6,7 @@ import {
   PersonTitle,
   PersonType,
   TenureSummary,
-} from "@mtfh/common/lib/api/person/v1";
+} from "@mfe/common/lib/api/person/v1";
 
 import { TENURE_TYPES } from "../../../constants";
 

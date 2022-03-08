@@ -1,7 +1,7 @@
 import { rest } from "msw";
 
-import { Asset } from "@mtfh/common/lib/api/asset/v1";
-import { config } from "@mtfh/common/lib/config";
+import { Asset } from "@mfe/common/lib/api/asset/v1";
+import { config } from "@mfe/common/lib/config";
 
 import { generateMockAssetTenureV1, generateMockAssetV1 } from "./data";
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { render } from "@hackney/mtfh-test-utils";
+import { render } from "@hackney/mfe-test-utils";
 import { screen } from "@testing-library/react";
 
 import { FormGroup, Input } from "..";

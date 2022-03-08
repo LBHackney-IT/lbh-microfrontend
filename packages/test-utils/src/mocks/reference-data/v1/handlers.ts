@@ -1,7 +1,7 @@
 import { rest } from "msw";
 
-import { ReferenceData } from "@mtfh/common/lib/api/reference-data/v1";
-import { config } from "@mtfh/common/lib/config";
+import { ReferenceData } from "@mfe/common/lib/api/reference-data/v1";
+import { config } from "@mfe/common/lib/config";
 
 export const getReferenceDataV1 = (
   data: ReferenceData[] | Record<string, ReferenceData[]> = {},

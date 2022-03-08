@@ -1,4 +1,4 @@
-import { BREAKPOINTS, breakpoints } from "@hackney/mtfh-system";
+import { BREAKPOINTS, breakpoints } from "@hackney/mfe-system";
 import useMediaBreakpoint from "use-breakpoint";
 
 export type BreakpointKey = keyof typeof BREAKPOINTS;

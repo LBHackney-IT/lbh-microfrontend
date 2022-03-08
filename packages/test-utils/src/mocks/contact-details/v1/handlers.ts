@@ -1,6 +1,6 @@
 import { rest } from "msw";
 
-import { config } from "@mtfh/common/lib/config";
+import { config } from "@mfe/common/lib/config";
 
 export const deleteContactDetailV1 = (data: any = {}, code = 200) =>
   rest.delete(`${config.contactDetailsApiUrlV1}/contactDetails`, (req, res, ctx) => {

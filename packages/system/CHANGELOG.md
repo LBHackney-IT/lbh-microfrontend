@@ -1,4 +1,4 @@
-# @hackney/mtfh-system
+# @hackney/mfe-system
 
 ## 1.0.2
 
@@ -10,4 +10,4 @@
 
 ### Patch Changes
 
-- 94c28e7: Initial release of MTFH packages
+- 94c28e7: Initial release of mfe packages

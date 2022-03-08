@@ -1,6 +1,6 @@
 import faker from "faker/locale/en";
 
-import { Address } from "@mtfh/common/lib/api/address/v1";
+import { Address } from "@mfe/common/lib/api/address/v1";
 
 export const generateAddressV1 = (): Address => ({
   UPRN: faker.datatype.number(123456789),

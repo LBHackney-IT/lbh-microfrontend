@@ -1,7 +1,7 @@
 import React, { isValidElement } from "react";
 import { Route } from "react-router-dom";
 
-import { queries } from "@hackney/mtfh-system";
+import { queries } from "@hackney/mfe-system";
 import { RenderOptions, RenderResult, render as rtlRender } from "@testing-library/react";
 import { JestAxeConfigureOptions, axe, toHaveNoViolations } from "jest-axe";
 import MatchMediaMock from "jest-matchmedia-mock";
@@ -9,7 +9,7 @@ import { rest } from "msw";
 import { setupServer } from "msw/node";
 import { SWRConfig } from "swr";
 
-import { ConfirmationRouter } from "@mtfh/common/lib/components/confirmation-router";
+import { ConfirmationRouter } from "@mfe/common/lib/components/confirmation-router";
 
 export * from "./mocks";
 export * from "./constants";

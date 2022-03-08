@@ -52,7 +52,7 @@ module.exports = {
             position: "before",
           },
           {
-            pattern: "@mtfh/**",
+            pattern: "@mfe/**",
             group: "internal",
             position: "before",
           },

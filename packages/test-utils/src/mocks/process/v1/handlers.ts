@@ -1,6 +1,6 @@
 import { rest } from "msw";
 
-import { config } from "@mtfh/common/lib/config";
+import { config } from "@mfe/common/lib/config";
 
 import { generateMockProcessV1 } from "./data";
 

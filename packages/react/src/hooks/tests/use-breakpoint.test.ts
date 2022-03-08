@@ -1,4 +1,4 @@
-import { setMediaQuery } from "@hackney/mtfh-test-utils";
+import { setMediaQuery } from "@hackney/mfe-test-utils";
 import { renderHook } from "@testing-library/react-hooks";
 
 import { BreakpointKey, useBreakpoint, useBreakpointValue } from "../use-breakpoint";

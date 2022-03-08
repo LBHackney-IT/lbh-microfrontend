@@ -98,7 +98,7 @@ export default class ApplicationGenerator extends Generator<ApplicationGenerator
         type: "input",
         name: "orgName",
         message: "Namespace of project (@namespace/project)",
-        default: this.options.orgName || "mtfh",
+        default: this.options.orgName || "mfe",
         validate,
       },
       {

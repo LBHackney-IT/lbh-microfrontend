@@ -1,7 +1,7 @@
 import { RestRequest, rest } from "msw";
 
-import { Comment } from "@mtfh/common/lib/api/comments/v1";
-import { config } from "@mtfh/common/lib/config";
+import { Comment } from "@mfe/common/lib/api/comments/v1";
+import { config } from "@mfe/common/lib/config";
 
 import { dynamoDbQuery } from "../../../utils/dynamo-db-query";
 import { generateMockCommentV1 } from "./data";

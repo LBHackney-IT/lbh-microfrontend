@@ -15,7 +15,7 @@ import UpgradeCommand from "./commands/upgrade";
 const cli = meow(
   `
 	Usage
-    $ mtfh-cli ${chalk.gray("<command>")}
+    $ mfe-cli ${chalk.gray("<command>")}
     
   Commands
     - install
@@ -25,19 +25,19 @@ const cli = meow(
     - upgrade
 
 	Examples
-	  $ mtfh-cli new lbh-microfrontend-project
+	  $ mfe-cli new lbh-microfrontend-project
    ${chalk.gray(
      "- Starts the scaffolding in a new folder in cwd called lbh-microfrontend-project",
    )}
-   $ mtfh-cli run
+   $ mfe-cli run
    ${chalk.gray("- Starts only the required apps")}
-   $ mtfh-cli run search tenure
+   $ mfe-cli run search tenure
    ${chalk.gray(
      "- Starts the required apps, plus lbh-microfrontend-search and lbh-microfrontend-tenure",
    )}
-   $ mtfh-cli run mtfh
+   $ mfe-cli run mfe
    ${chalk.gray(
-     "- Starts the required apps, plus all apps prefixed with mtfh (most if not all)",
+     "- Starts the required apps, plus all apps prefixed with mfe (most if not all)",
    )}
 `,
 );

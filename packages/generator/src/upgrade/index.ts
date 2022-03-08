@@ -79,7 +79,7 @@ export default class ApplicationGenerator extends Generator<UpgradeGeneratorOpti
 
     const mfe = {
       devDependencies: {
-        "@hackney/mtfh-test-utils": "latest",
+        "@hackney/mfe-test-utils": "latest",
         "@hackney/webpack-import-map-plugin": "latest",
         "@testing-library/jest-dom": "^5.14.1",
         "@testing-library/react": "^12.0.0",

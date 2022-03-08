@@ -13,8 +13,8 @@ A Micro-frontend application for Hackney.
 
 2. Complete instructions on adding a new Micro-frontend to the (Root App)[https://github.com/LBHackney-IT/lbh-microfrontend-root#overview]
 
-3. Use the `mtfh-cli` to launch the app
+3. Use the `mfe-cli` to launch the app
 
 ```bash
-mtfh-cli <%= projectName %>
+mfe-cli <%= projectName %>
 ```

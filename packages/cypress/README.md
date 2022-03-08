@@ -1,4 +1,4 @@
-# `@hackney/mtfh-cypress`
+# `@hackney/mfe-cypress`
 
 This package is intended to be used in conjuction with a live environment that uses
 import-maps to resolve micro-frontends. It will stub an import-map with the url defined in
@@ -16,7 +16,7 @@ Lifecycle:
 ## Installation
 
 ```
-yarn add @hackney/mtfh-cli
+yarn add @hackney/mfe-cli
 yarn add dotenv cypress -D
 ```
 
@@ -31,11 +31,11 @@ so we have to wire them up separately.
 In `cypress/plugins/index.js`
 
 ```js
-const { configPlugin } = require("@hackney/mtfh-cypress/plugin");
+const { configPlugin } = require("@hackney/mfe-cypress/plugin");
 
 module.exports = (on, config) => {
-  let mtfhConfig = configPlugin(on, config);
-  return mtfhConfig;
+  let mfeConfig = configPlugin(on, config);
+  return mfeConfig;
 };
 ```
 
@@ -65,7 +65,7 @@ In `cypress.json`
 In `cypress/support/index.js`
 
 ```js
-import "@hackney/mtfh-cypress";
+import "@hackney/mfe-cypress";
 ```
 
 This will import the `@testing-library/cypress` commands to mirror the FE unit testing

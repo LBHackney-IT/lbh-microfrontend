@@ -7,7 +7,7 @@ Testing utilities for Jest utilising the `@testing-library` and `mws` frameworks
 Add the lib to jest config:
 
 ```ts
-setupFilesAfterEnv: ["@testing-library/jest-dom", "@hackney/mtfh-test-utils"],
+setupFilesAfterEnv: ["@testing-library/jest-dom", "@hackney/mfe-test-utils"],
 ```
 
 ## Render
@@ -15,7 +15,7 @@ setupFilesAfterEnv: ["@testing-library/jest-dom", "@hackney/mtfh-test-utils"],
 You should always prefer to use the render method from this library when testing.
 
 ```tsx
-import { render } from "@hackney/mtfh-test-utils";
+import { render } from "@hackney/mfe-test-utils";
 ```
 
 ### React Router Dom
@@ -66,7 +66,7 @@ const queries = {
 We expose a helper to test a dom/react element for accessibility using `jest-axe`
 
 ```tsx
-import { render, testA11y } from "@hackney/mtfh-test-utils";
+import { render, testA11y } from "@hackney/mfe-test-utils";
 
 test("it passes a11y", async () => {
   const { container } = render(<Button />);
@@ -77,7 +77,7 @@ test("it passes a11y", async () => {
 Or directly
 
 ```tsx
-import { testA11y } from "@hackney/mtfh-test-utils";
+import { testA11y } from "@hackney/mfe-test-utils";
 
 test("it passes a11y", async () => {
   await testA11y(<Button />);
@@ -105,7 +105,7 @@ await testA11y(<Button />, {
 The library exposes a msw node server, with no existing handlers defined:
 
 ```ts
-import { server } from "@hackney/mtfh-test-utils";
+import { server } from "@hackney/mfe-test-utils";
 ```
 
 ### Default Api Handlers
@@ -114,7 +114,7 @@ To add any of the versioned api handlers create a `test-utils.ts` file in your p
 define the following:
 
 ```ts
-import { server, getPersonV1, getCommentsV2 } from "@hackney/mtfh-test-utils";
+import { server, getPersonV1, getCommentsV2 } from "@hackney/mfe-test-utils";
 
 beforeEach(() => {
   server.use(getPersonV1(), getCommentsV2());
@@ -130,7 +130,7 @@ When testing components that use any api, you should be testing failures. To do 
 define the usage before the render:
 
 ```tsx
-import { render, server, getPersonV1 } from "@hackney/mtfh-test-utils";
+import { render, server, getPersonV1 } from "@hackney/mfe-test-utils";
 
 test("it handles an unexpected error", async () => {
   server.use(getPersonV1("error", 500));
@@ -146,7 +146,7 @@ test("it handles an unexpected error", async () => {
 This library exposes helpers (using faker) to help generate mock data.
 
 ```ts
-import { generateMockPersonV1 } from "@hackney/mtfh-test-utils";
+import { generateMockPersonV1 } from "@hackney/mfe-test-utils";
 
 const mockPerson = generateMockPersonV1({
   firstName: "Test",

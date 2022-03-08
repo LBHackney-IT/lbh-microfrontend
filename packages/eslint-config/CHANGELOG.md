@@ -51,4 +51,4 @@
 
 ### Patch Changes
 
-- 94c28e7: Initial release of MTFH packages
+- 94c28e7: Initial release of mfe packages

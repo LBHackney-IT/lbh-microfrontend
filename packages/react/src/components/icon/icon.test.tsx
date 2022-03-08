@@ -1,6 +1,6 @@
 import React from "react";
 
-import { render, testA11y } from "@hackney/mtfh-test-utils";
+import { render, testA11y } from "@hackney/mfe-test-utils";
 
 import { Icon } from "./icon";
 

@@ -34,7 +34,7 @@
 
 ### Patch Changes
 
-- a95e9cb: Update application generator for mtfh-cli v2
+- a95e9cb: Update application generator for mfe-cli v2
 
 ## 1.0.1
 

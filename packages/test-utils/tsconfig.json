@@ -1,6 +1,6 @@
 {
   "extends": "../../tsconfig.json",
-  "include": ["src", "node_modules/@mtfh/common"],
+  "include": ["src", "node_modules/@mfe/common"],
   "compilerOptions": {
     "declarationDir": "types"
   }

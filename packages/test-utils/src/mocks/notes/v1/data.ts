@@ -1,6 +1,6 @@
 import faker from "faker/locale/en";
 
-import { Comment } from "@mtfh/common/lib/api/comments/v1";
+import { Comment } from "@mfe/common/lib/api/comments/v1";
 
 faker.seed(1);
 

@@ -1,5 +1,5 @@
 {
-  "name": "@hackney/mtfh-cli",
+  "name": "@hackney/mfe-cli",
   "version": "2.1.1",
   "license": "MIT",
   "bin": "dist/cli.js",

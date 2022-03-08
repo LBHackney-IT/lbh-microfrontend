@@ -9,10 +9,10 @@ module.exports = {
     "\\.(css|scss)$": "identity-obj-proxy",
   },
   transformIgnorePatterns: [
-    "[/\\\\]node_modules[/\\\\](?!lbh-frontend|@mtfh)[/\\\\].+\\.(js|jsx)$",
+    "[/\\\\]node_modules[/\\\\](?!lbh-frontend|@mfe)[/\\\\].+\\.(js|jsx)$",
   ],
   setupFilesAfterEnv: [
     "@testing-library/jest-dom/extend-expect",
-    "@hackney/mtfh-test-utils",
+    "@hackney/mfe-test-utils",
   ],
 }

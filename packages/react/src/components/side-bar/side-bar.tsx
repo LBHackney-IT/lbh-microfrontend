@@ -37,7 +37,7 @@ export const SideBarSection: SideBarSectionComponent = forwardRef(function SideB
   }
 
   return (
-    <div ref={ref} className={cn("mtfh-sidebar-section", className)} {...props}>
+    <div ref={ref} className={cn("mfe-sidebar-section", className)} {...props}>
       {heading ? <h2 className="lbh-heading-h2">{heading}</h2> : undefined}
       {children}
     </div>
@@ -60,7 +60,7 @@ export const SideBar: SideBarComponent = forwardRef(function SideBar(
   ref,
 ) {
   const isDesktop = useBreakpoint("md");
-  const sidebarClasses = cn("mtfh-sidebar", className);
+  const sidebarClasses = cn("mfe-sidebar", className);
 
   return (
     <SideBarComp ref={ref} className={sidebarClasses} {...props}>

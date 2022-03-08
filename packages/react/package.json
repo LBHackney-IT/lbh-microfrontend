@@ -1,5 +1,5 @@
 {
-  "name": "@hackney/mtfh-react",
+  "name": "@hackney/mfe-react",
   "version": "1.1.2",
   "description": "LBH React Design System for LBH Modern Tools for Housing",
   "author": "https://hackney.gov.uk/",
@@ -55,8 +55,8 @@
     "rollup-plugin-postcss": "^4.0.0"
   },
   "dependencies": {
-    "@hackney/mtfh-system": "^1.0.2",
-    "@hackney/mtfh-test-utils": "^1.1.2",
+    "@hackney/mfe-system": "^1.0.2",
+    "@hackney/mfe-test-utils": "^1.1.2",
     "@radix-ui/react-polymorphic": "^0.0.12",
     "@reach/dialog": "^0.15.3",
     "@testing-library/react-hooks": "^7.0.1",

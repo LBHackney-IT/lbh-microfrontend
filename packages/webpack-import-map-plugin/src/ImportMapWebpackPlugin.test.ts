@@ -35,7 +35,7 @@ test("it throws an error if basePath is not a valid domain", async () => {
   expect(() =>
     generateConfig({
       basePath: "/",
-      namespace: "@mtfh",
+      namespace: "@mfe",
     }),
   ).toThrow("[ImportMapWebpackPlugin] basePath is not a valid domain.");
 });
@@ -44,7 +44,7 @@ test("it throws an error if outputFilename is blank", async () => {
   expect(() =>
     generateConfig({
       basePath: "http://localhost",
-      namespace: "@mtfh",
+      namespace: "@mfe",
       outputFilename: "",
     }),
   ).toThrow("[ImportMapWebpackPlugin] outputFilename cannot be blank.");
@@ -61,12 +61,12 @@ test("it throws an error if namespace is missing", async () => {
 test("it compiles import-map with defaults", async () => {
   const config = generateConfig({
     basePath: "http://localhost",
-    namespace: "@mtfh",
+    namespace: "@mfe",
   });
 
   const fs = await compile(config);
   const map = fs.readFileSync("./dist/import-map.json", "utf8");
-  expect(map).toBe('{"imports":{"@mtfh/main":"http://localhost/main.0b29e576.js"}}');
+  expect(map).toBe('{"imports":{"@mfe/main":"http://localhost/main.0b29e576.js"}}');
 });
 
 test("it compiles with simple webpack config", async () => {
@@ -75,12 +75,12 @@ test("it compiles with simple webpack config", async () => {
     plugins: [
       new ImportMapWebpackPlugin({
         basePath: "http://localhost",
-        namespace: "@mtfh",
+        namespace: "@mfe",
       }),
     ],
   });
   const map = fs.readFileSync("./dist/import-map.json", "utf8");
-  expect(map).toBe('{"imports":{"@mtfh/main":"http://localhost/main.js"}}');
+  expect(map).toBe('{"imports":{"@mfe/main":"http://localhost/main.js"}}');
 });
 
 test("it compiles with complex webpack config", async () => {
@@ -93,12 +93,12 @@ test("it compiles with complex webpack config", async () => {
     plugins: [
       new ImportMapWebpackPlugin({
         basePath: "http://localhost",
-        namespace: "@mtfh",
+        namespace: "@mfe",
       }),
     ],
   });
   const map = fs.readFileSync("./dist/import-map.json", "utf8");
   expect(map).toBe(
-    '{"imports":{"@mtfh/add":"http://localhost/add.js","@mtfh/math/add":"http://localhost/math/add.js"}}',
+    '{"imports":{"@mfe/add":"http://localhost/add.js","@mfe/math/add":"http://localhost/math/add.js"}}',
   );
 });

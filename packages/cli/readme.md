@@ -1,20 +1,20 @@
-# `@hackney/mtfh-cli`
+# `@hackney/mfe-cli`
 
-A cli to help manage micro-frontend orchestration for MTFH.
+A cli to help manage micro-frontend orchestration for mfe.
 
 ## Install
 
 ```bash
-$ npx @hackney/mtfh-cli
-$ npm install -g @hackney/mtfh-cli
-$ yarn global add @hackney/mtfh-cli
+$ npx @hackney/mfe-cli
+$ npm install -g @hackney/mfe-cli
+$ yarn global add @hackney/mfe-cli
 ```
 
 ## CLI
 
 ```
 Usage
-    $ mtfh-cli <command>
+    $ mfe-cli <command>
 
   Commands
     - install
@@ -24,14 +24,14 @@ Usage
     - upgrade
 
 	Examples
-	  $ mtfh-cli new lbh-microfrontend-project
+	  $ mfe-cli new lbh-microfrontend-project
       - Starts the scaffolding in a new folder in cwd called lbh-microfrontend-project
-    $ mtfh-cli run
+    $ mfe-cli run
       - Starts only the required apps
-    $ mtfh-cli run search tenure
+    $ mfe-cli run search tenure
       - Starts the required apps, plus lbh-microfrontend-search and lbh-microfrontend-tenure
-    $ mtfh-cli run mtfh
-      - Starts the required apps, plus all apps prefixed with mtfh (most if not all)
+    $ mfe-cli run mfe
+      - Starts the required apps, plus all apps prefixed with mfe (most if not all)
 ```
 
 ## Requirements
@@ -39,7 +39,7 @@ Usage
 Node 14 - https://nodejs.org/en/ Github Personal Access Token -
 https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 
-NB: Most MTFH frontend repos are currently using `yarn` so it would be important to have
+NB: Most mfe frontend repos are currently using `yarn` so it would be important to have
 `yarn` installed as a global.
 
 ## Commands
@@ -56,9 +56,9 @@ with `lbh-microfrontend-`.
   configured in a terminal.
 - Optionally install all projects dependencies.
 
-This step will create a `.mtfh` config folder in your home folder. An encrypted version of
-your access token is stored in `.mtfh/config.json`. Feel free to delete. All registered
-micro-frontends are stored in `.mtfh/app.json`.
+This step will create a `.mfe` config folder in your home folder. An encrypted version of
+your access token is stored in `.mfe/config.json`. Feel free to delete. All registered
+micro-frontends are stored in `.mfe/app.json`.
 
 ### Run
 
@@ -73,19 +73,19 @@ micro-frontend's name.
 #### Run only the required
 
 ```
-mtfh-cli run
+mfe-cli run
 ```
 
 #### Run all the required, and search and tenure
 
 ```
-mtfh-cli run search tenure
+mfe-cli run search tenure
 ```
 
 #### Run all registered micro-frontends
 
 ```
-mtfh-cli run mtfh
+mfe-cli run mfe
 ```
 
 ### Register

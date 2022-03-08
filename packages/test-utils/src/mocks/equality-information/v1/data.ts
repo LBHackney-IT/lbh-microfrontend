@@ -1,6 +1,6 @@
 import faker from "faker/locale/en";
 
-import { EqualityData } from "@mtfh/common/lib/api/equality-information/v1";
+import { EqualityData } from "@mfe/common/lib/api/equality-information/v1";
 
 export const generateMockEqualityDataV1 = (): EqualityData => ({
   id: faker.datatype.uuid(),

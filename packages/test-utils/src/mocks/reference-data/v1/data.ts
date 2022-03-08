@@ -1,6 +1,6 @@
 import faker from "faker/locale/en";
 
-import { ReferenceData } from "@mtfh/common/lib/api/reference-data/v1";
+import { ReferenceData } from "@mfe/common/lib/api/reference-data/v1";
 
 import { TENURE_TYPES } from "../../../constants";
 

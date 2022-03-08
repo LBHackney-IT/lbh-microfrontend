@@ -17,7 +17,7 @@ const webpackConfig = {
   plugins: [
     new ImportMapWebpackPlugin({
       basePath: process.env.CDN_URL || "http://localhost:8000",
-      namespace: "@mtfh",
+      namespace: "@mfe",
     }),
   ],
 };
@@ -29,7 +29,7 @@ The above will produce an import-map with the following output:
 // dist/import-map.development.json
 {
   "imports": {
-    "@mtfh/main": "http://localhost:8000/main.74284023.js"
+    "@mfe/main": "http://localhost:8000/main.74284023.js"
   }
 }
 ```
@@ -42,7 +42,7 @@ Must be a valid URL domain
 
 ### namespace \*
 
-The namespace the outputted files belong to. e.g. `@mtfh`
+The namespace the outputted files belong to. e.g. `@mfe`
 
 ### outputFilename
 
